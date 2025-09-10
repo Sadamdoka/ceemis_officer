@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Links Of CSS File -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/flaticon.css">
+        <link rel="stylesheet" href="assets/css/remixicon.css">
+        <link rel="stylesheet" href="assets/css/ma5-menu.min.css">
+        <link rel="stylesheet" href="assets/css/dark-mode.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+
+        <!-- Form step -->
+        <link href="assets/vendor/jquery-steps/css/jquery.steps.css" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+
+        <!-- SweetAlert2 CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"/>
+        <!-- SweetAlert2 JS -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <!-- Title -->
+        <title>Ceemis</title>
+    </head>
+    <body>
+
+        <!-- Start Preloader Area -->
+        <div class="preloader" id="loader-style">
+            <div class="preloader-wrap">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- End Preloader Area -->
+
+
+        <!-- Start Section-title Area -->
+        <div class="section-title mb-0 bg-color ptb-15">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0">
+                        <a href="home.html">
+                            <i class="ri-arrow-left-s-line"></i>
+                            Complaint Form
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <!-- End Section-title Area -->
+
+        <div class="bg-color-fff border-radius-20">
+            <!-- Start Register Area -->
+            <div class="register-area ptb-30">
+                <div class="container">
+                    <div class="section-title">
+                        <h1></h1>
+                    </div>
+
+                    <br><!-- comment -->
+                    <br><!-- comment -->
+                    <form class="logon-form" >
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="nin" placeholder="Passport No | Nin No">
+                                <input type="text" class="form-control" id="mw_userid" style="display: none">
+                                <input type="text" class="form-control" id="mw_lorg" style="display: none">
+                                <input type="text" class="form-control" id="mw_org" style="display: none">
+                                <div class="input-group-append">
+                                    <button class="btn btn-sm btn-dark" type="button" id="btn_check_guest">Check</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <form class="logon-form step-form-horizontal" id="step-form-horizontal" >
+                        <div >
+                            <h5>Personal Info</h5>
+                            <section>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="mw_name_f" placeholder="First Name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="mw_name_m" placeholder="Middle Name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="mw_name_s" placeholder="Surname" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" id="mw_whatsapp_no" name="phoneNumber" class="form-control" placeholder="Mobile Phone & WhatsApp Contact" required>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" aria-label="Default select example" id="mw_gender" required>
+                                        <option  disabled selected hidden>Choose Gender</option>
+                                        <option>Male</option>
+                                        <option >Female</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <select class="form-control"  id="mw_job" required>
+                                            <option  disabled selected hidden>Choose Job</option>
+                                            <option>Housemaid</option>
+                                            <option>Female Cleaner</option>
+                                            <option>Driver</option>
+                                            <option>Labourer</option>
+                                            <option>Barrister</option>
+                                            <option>Male Cleaner</option>
+                                            <option>Home Care</option>
+                                            <option>Rather Not Say</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="address" placeholder="Current Address">
+                                </div>
+                            </section>
+                            <h5>Residence Info</h5>
+                            <section>
+                                <div class="form-group">
+                                    <select class="form-control" data-style="btn-warning"  data-live-search="true" aria-label="Default select example" id="mw_country"  required>
+
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <select class="form-control" data-style="btn-warning" data-live-search="true" aria-label="Default select example" id="mw_address" required>
+                                            <option >Loading</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="ARR" placeholder="Training Center" required>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group"  id="lco_div">  
+                                    <select class="form-control" aria-label="Default select example" id="mw_lco" required>
+                                    </select>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <select class="form-control" aria-label="Default select example" id="mw_fco"  required>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="mw_emp_name" placeholder="Name of the Employer"  required>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="mw_emp_number" placeholder="Contacts of the Employer"  required>
+                                </div>
+
+                            </section>
+
+                            <h5>Case Details</h5>
+                            <section>
+                                <div class="form-group">
+                                    <label>How do you categorize the Main Complaint?(Select Cateogry Below)</label>
+                                    <select class="form-control" aria-label="Default select example" id="mw_comp_category"  required>
+                                        <option disabled selected hidden>Please Choose Case Category</option>
+                                        <option>COMPLIMENT/APPRECIATION</option>
+                                        <option>SALARY PAYMENT ASSISTANCE</option>
+                                        <option>PHONE/COMMUNICATION</option>
+                                        <option>UNTRACEABLE</option>
+                                        <option>WELFARE ASSISTANCE</option>
+                                        <option>MEDICAL ASSISTANCE</option>
+                                        <option>SEXUAL ABUSE ASSISTANCE</option>
+                                        <option>PHYSICAL ABUSE ASSISTANCE</option>
+                                        <option>ARREST/PRISON/DEPORTATION ASSISTANCE</option>
+                                        <option>SAKAN ASSISTANCE</option>
+                                        <option>EXIT VISA ASSISTANCE</option>
+                                        <option>AGENCY ABUSE ASSISTANCE</option>
+                                        <option>PASSPORT/TRAVEL DOCUMENT ASSISTANCE</option>
+                                        <option>FORCED LABOUR/HUMAN TRAFFICKING</option>
+                                        <option>INQUIRY/GUIDANCE</option>
+                                        <option>FALSE ACCUSATION ASSISTANCE</option>
+                                        <option>CONTRACT TERMINATION ASSISTANCE</option>
+                                        <option>RUNAWAY/ABSCONDER REPORT</option>
+                                        <option>Migrant Worker MISCONDUCT REPORT</option>
+                                        <option>SOCIAL MEDIA ABUSE</option>
+                                        <option>CASE OVERDUE ASSISTANCE</option>
+                                        <option>DEATH CASE ASSISTANCE</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <!--<input type="text" class="form-control" id="comp_narative" placeholder="COMPLAINT NARATIVE">-->
+                                    <textarea rows="8" class="form-control" id="comp_help" placeholder="Write details of your complaint and how you need to be helped"  required></textarea>
+                                </div>
+
+
+
+
+                                <div class="form-group">
+                                    <label>Do you have any evidence of  Picture/Video/Document please attach here! </label>
+                                    <input type="file" class="form-control" id="mw_evidence" accept=".pdf, image/jpeg, image/png" />
+
+                                </div>
+
+
+                            </section>
+
+                            <h5>Finish</h5>
+                            <section>
+                                <br>
+                                <div class="form-group">
+                                    <h3 class="text-center mb-4">Your Form is Complete please Proceed to Report </h3>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="form-group">
+                                    <input type="checkbox" class="form-check-input" id="info_check" value="">
+                                    <p>Declaration: I hereby state that the information I am providing is true, and I am aware that my information will be verified. </p>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" id="report_btn" class="btn btn-success btn-block">Report Case</button>
+                                </div>
+
+                            </section>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+            <!-- Start Register Area -->
+
+            <!-- Start Footer Area -->
+            <div class="footer-area pt-5" >
+                <div class="container" >
+                    <div class="footer-content" >
+                        <a class="footer-logo">
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer Area -->
+        </div>
+
+
+        <!-- Start App Navbar Area -->
+        <div class="app-navbar-area">
+            <div class="container">
+                <ul class="d-flex justify-content-between align-items-end">
+                    <li>
+                        <a href="profile.html">
+                            <div class="icon">
+                                <img src="assets/images/icon/pages.png" alt="Images">
+                            </div>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="home.html" class="active">
+                            <div class="icon">
+                                <img src="assets/images/icon/home-icon.png" alt="Images">
+                            </div>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="icon ma5menu__toggle">
+                            <img src="assets/images/icon/menu-icon.png" alt="Images">
+                            <span>Menu</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End App Navbar Area -->
+
+        <!-- Links of JS File -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/carousel-thumbs.min.js"></script>
+        <script src="assets/js/dark-mode-switch.min.js"></script>
+        <script src="assets/js/ma5-menu.min.js"></script>
+        <script src="assets/js/calendar.js"></script>
+        <script src="assets/js/form-validator.min.js"></script>
+        <script src="assets/js/contact-form-script.js"></script>
+        <script src="assets/js/apexcharts.min.js"></script>
+        <script src="assets/js/apex-custom-pie-donut-chart.js"></script>
+        <script src="assets/js/custom.js"></script>
+
+
+
+        <script src="assets/vendor/jquery-steps/build/jquery.steps.min.js"></script>
+        <script src="assets/vendor/jquery-validation/jquery.validate.min.js"></script>
+
+
+
+        <!-- Form validate init -->
+        <script src="assets/js/jquery.validate-init.js"></script>
+        <!-- Form step init -->
+        <script src="assets/js/jquery-steps-init.js"></script>
+
+        <!-- Custom Scripts -->
+        <script src="assets/dash/basic.js"></script>
+        <script src="assets/dash/gen.js"></script>
+        <script src="assets/dash/constants.js"></script>
+        <script src="assets/dash/ceemis.js"></script>
+
+    </body>
+</html>
