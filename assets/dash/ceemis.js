@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Place all your custom Javascript functions and plugin calls below this line
     function Init() {
+        document.getElementById('loader-style').style.display = 'none';
         document.addEventListener('contextmenu', (e) => e.preventDefault()); // Disable right-click
         //document.addEventListener('copy', (e) => e.preventDefault());        // Disable copy
         //document.addEventListener('paste', (e) => e.preventDefault());       // Disable paste
@@ -59,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const storedUserDataString = localStorage.getItem('officerData');
             const storedUserData = JSON.parse(storedUserDataString);
 
-            console.log(storedUserData);
+            //console.log(storedUserData);
 
 
             loadCategory('hcategory');
