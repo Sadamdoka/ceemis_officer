@@ -1732,7 +1732,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 text = "In-Progress";
             } else if (input === '3') {
                 btnClass = "btn-info";
-                text = "Referred to Us";
+                text = "In-Progress";
             } else if (input === '4') {
                 btnClass = "btn-success";
                 text = "Closed Case";
